@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Website - Portfolio Team Cinta Coding</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Team Cinta Coding</h1>
+    </a>
+
+    <div class="moto-hidup text-center">
+      <p>Moto Hidup:</p>
+      <p>"Laki laki tidak bercerita tau nya sukses"</p>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+      <li><a href="index.html#hero"><i class="bi bi-house navicon"></i> Home</a></li>
+      <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About Us</a></li>
+      <li><a href="index.html#services"><i class="bi bi-person-circle navicon" style="font-size: 1.4rem;"></i> Our Portofolio</a></li>
+        <ul>
+          <li class="dropdown">
+            <a href="#" id="swipeUpBtn" style="display: flex; align-items: center; gap: 8px;">
+              <i class="bi bi-hand-index" style="font-size: 1.5rem;"></i>
+              <span id="swipeText" style="margin-left: 1px;">Swipe Up/Down</span>
+            </a>
+            <ul></ul>
+          </li>
+          <li>
+            <a href="index.html#contact">
+              <i class="bi bi-envelope navicon"></i> Contact Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <script>
+        let isAtTop = true;
+        document.getElementById("swipeUpBtn").addEventListener("click", function(event) {
+          event.preventDefault();
+          if (isAtTop) {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+            document.getElementById("swipeText").textContent = "Swipe Down";
+          } else {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            document.getElementById("swipeText").textContent = "Swipe Up";
+          }
+          isAtTop = !isAtTop;
+        });
+      </script>
+      
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Ruang Personal Branding</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Personal Branding</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="services-list">
+              <a href="#" class="active">Skills</a>
+              <a href="#">Management Team</a>
+              <a href="#">Video Production</a>
+              <a href="#">Public Speaking</a>
+              <a href="#">Project Management</a>
+            </div>
+
+            <h4>Keahlian dan Pengalaman dalam Dunia Digital</h4>
+            <p>Haloo, Saya Muhammad Faisal seorang mahasiswa Sistem Informasi di STMIK IKMI Cirebon. Saya memiliki ketertarikan yang kuat 
+              pada bidang teknologi dan bisnis. Saya aktif terlibat dalam organisasi kampus serta kompetisi nasional dan internasional.</p>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/faisal-2.jpg" alt="" class="img-fluid services-img">
+            <h3>Sedikit Perkenalan Tentang Saya</h3>
+            <p>
+              Saya Muhammad Faisal, mahasiswa Sistem Informasi di STMIK IKMI Cirebon dengan minat kuat di bidang teknologi dan bisnis. 
+              Saya aktif dalam UKM android developher community sebagai mentor dan koordinator UI/UX, Sering mengikuti kompetisi nasional dan 
+              internasional seperti Finalist National Tiktok LO Kreatif 2024, Semi Final Enterns International Business Case Competition, 
+              Juara 1 Content Creation Iyes Compefest, Juara 2 Bisnis Plan Digital Indonersi 2024 serta memiliki pengalaman dalam pengembangan 
+              aplikasi dan manajemen proyek. Saya percaya bahwa kombinasi teknologi dan bisnis dapat menciptakan solusi inovatif untuk masalah 
+              sehari-hari. Untuk mengenal saya lebih jauh, silakan cek portofolio saya di bawah ini."
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Link Portofolio: <a href="https://cintacoding.my.canva.site/" target="_blank">Portofolio Saya</a></span></li>
+            </ul>
+            <p>
+              Akhir kata dari saya.
+            </p>
+            <p>
+              Terima kasih telah meluangkan waktu untuk mengunjungi portofolio saya! Saya sangat menghargai ketertarikan dan perhatian Anda dalam 
+              mengenal lebih jauh tentang perjalanan, karya, dan pengalaman saya di dunia data, teknologi, serta inovasi digital. Saya percaya bahwa 
+              kolaborasi dan berbagi ilmu adalah kunci untuk menciptakan solusi yang berdampak besar. Oleh karena itu, saya selalu terbuka untuk diskusi, 
+              kolaborasi, atau peluang kerja sama yang dapat menghasilkan inovasi-inovasi baru. Apakah Anda memiliki pertanyaan, ide menarik, atau 
+              proyek yang ingin dikerjakan bersama? Jangan ragu untuk menghubungi saya melalui informasi kontak yang tersedia. Mari kita bersama-sama
+               membangun masa depan yang lebih baik melalui teknologi dan inovasi. Saya berharap portofolio ini dapat memberikan gambaran tentang 
+               bagaimana saya dapat berkontribusi dan memberikan nilai tambah dalam bidang ini. Sampai jumpa di kesempatan berikutnya, dan mari 
+               wujudkan perubahan yang berarti!
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Website Portofolio Team Cinta Coding</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="#services">teamcintacoding</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

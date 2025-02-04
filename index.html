@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Website - Portfolio Team Cinta Coding</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Team Cinta Coding</h1>
+    </a>
+
+    <div class="moto-kita text-center">
+      <p>Moto Kita :</p>
+        <p>"Belajar, Amati,Tiru dan Modifikasi."</p>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About Us</a></li>
+        <li><a href="index.html#services"><i class="bi bi-person-circle navicon" style="font-size: 1.4rem;"></i> Our Portofolio</a></li>
+          <ul>
+            <li class="dropdown">
+              <a href="#" id="swipeUpBtn" style="display: flex; align-items: center; gap: 8px;">
+                <i class="bi bi-hand-index" style="font-size: 1.5rem;"></i>
+                <span id="swipeText" style="margin-left: 1px;">Swipe Up/Down</span>
+              </a>
+              <ul></ul>
+            </li>
+            <li>
+              <a href="#contact">
+                <i class="bi bi-envelope navicon"></i> Contact Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <script>
+          let isAtTop = true;
+          document.getElementById("swipeUpBtn").addEventListener("click", function(event) {
+            event.preventDefault();
+            if (isAtTop) {
+              window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+              document.getElementById("swipeText").textContent = "Swipe Down";
+            } else {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+              document.getElementById("swipeText").textContent = "Swipe Up";
+            }
+            isAtTop = !isAtTop;
+          });
+        </script>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Team Cinta Coding</h2>
+        <p>I'm <span class="typed" data-typed-items="Designer, Developer, Students, Programmer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+        <p>"Kami adalah sekelompok mahasiswa Sistem Informasi yang lebih sering tidur daripada ngoding, lebih banyak ngopi daripada minum air putih, dan selalu siap menciptakan solusi teknologi (walaupun kadang error dulu di awal). Dengan keahlian masing-masing, kami percaya bahwa gabungan ide-ide gila kami bisa menghasilkan inovasi yang keren dan tentunya bikin dunia digital lebih seru!"</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Team Solid &amp; Cinta Coding.</h2>
+            <p class="fst-italic py-3">
+              Kelompok kami terdiri dari tujuh orang yang semuanya memiliki peran dan kontribusi masing-masing dalam tim ini. 
+              Setiap anggota memiliki keahlian dan kemampuan yang beragam, sehingga kami dapat saling melengkapi untuk mencapai tujuan bersama. 
+              Dengan kerja sama yang baik, kami percaya dapat menghasilkan karya terbaik.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Muhammad Faisal:</strong> <span>Keahlian Content Creator</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Muhammad Haikal Al Farizi:</strong> <span>Designer Figma</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Muhammad Satria Sahid R:</strong> <span>Programmer</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Jeri:</strong> <span>Developer</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Shafa Aristia Nurhalizah:</strong> <span>Programmer</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Susi Wulandari:</strong> <span>Designer UI/UX</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Nur Seftianah:</strong> <span>MasterChef</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              Nah, itulah kelompok kami—tujuh individu dengan latar belakang, keahlian, dan kemampuan yang berbeda-beda, tetapi bersatu untuk tujuan yang sama. 
+              Kami percaya bahwa setiap anggota memiliki peran penting dalam membangun sebuah tim yang kuat. Dengan kerja sama, saling mendukung, 
+              dan semangat untuk terus belajar, kami yakin bisa menghadapi tantangan apa pun dan menghasilkan karya terbaik. 
+              Kebersamaan inilah yang menjadi kekuatan kami, dan kami akan terus berusaha memberikan yang terbaik di setiap langkah perjalanan ini.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portofolio Pribadi</h2>
+    <p>Halo Bapak Rudi, selamat datang di website portofolio kami. Kami berharap Bapak dapat menikmati hasil karya yang telah kami presentasikan. 💻✨ Di sini, Bapak juga dapat melihat portofolio pribadi setiap anggota tim Cinta Coding. 😊 Terima kasih atas kunjungan Bapak, dan semoga dapat segera bertemu lagi di kesempatan berikutnya🙏.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon flex-shrink-0">
+          <img src="assets/img/faisal img.png" alt="portfolio 1" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover;">
+        </div>
+        <div>
+          <h4 class="title"><a href="personalbrandingfaisal.html" class="stretched-link">Muhammad Faisal</a></h4>
+          <p class="description">Halo! Saya Muhammad Faisal, mahasiswa yang selalu semangat berbagi pengetahuan tentang teknologi dan inovasi. 🚀 Yuk, jelajahi profil saya dan temukan banyak inspirasi menarik! 🔍✨</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon flex-shrink-0">
+          <img src="assets/img/haikal-1.png" alt="portfolio 2" class="rounded-circle" style="width: 55px; height: 55px; object-fit: cover;">
+        </div>
+        <div>
+          <h4 class="title"><a href="personalbrandinghaikal.html" class="stretched-link">Muhammad Haikal Al Farizi</a></h4>
+          <p class="description">Halo Semuanya, Saya Haikal Al Farizi, Mahasiswa Sistem Informasi semester 4. Penasaran dengan hasil web saya? Cek profil saya dan temukan karya-karya menarik! 💻✨"</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon flex-shrink-0">
+          <img src="assets/img/satria-1.jpg" alt="portfolio 3" class="rounded-circle" style="width: 55px; height: 55px; object-fit: cover;">
+        </div>
+        <div>
+          <h4 class="title"><a href="personalbrandingsatria.html" class="stretched-link">Muhammad Satria Sahid Ramadan</a></h4>
+          <p class="description">Hai, saya Muhammad Satria Sahid Ramadhan! 💡 Mahasiswa yang passionate tentang teknologi dan solusi kreatif. Temukan lebih banyak tentang pengalaman dan proyek seru saya di profil ini! 🎯</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="icon flex-shrink-0">
+          <img src="assets/img/jeri-1.jpg" alt="portfolio 4" class="rounded-circle" style="width: 56px; height: 56px; object-fit: cover;">
+        </div>
+        <div>
+          <h4 class="title"><a href="personalbrandingjeri.html" class="stretched-link">Jeri</a></h4>
+          <p class="description">Salam kenal! Saya Jeri, mahasiswa dengan ketertarikan tinggi pada dunia teknologi dan pengembangan digital. 💻🎨 Bergabunglah untuk melihat lebih banyak karya dan perjalanan saya! Cek profil saya sekarang! 👀</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+        <div class="icon flex-shrink-0">
+          <img src="assets/img/shafa-1.jpg" alt="portfolio 5" class="rounded-circle" style="width: 56px; height: 56px; object-fit: cover;">
+        </div>
+        <div>
+          <h4 class="title"><a href="personalbrandingshafa.html" class="stretched-link">Shafa Aristia Nurhalizah</a></h4>
+          <p class="description">Hai, saya Shafa Aristia Nur Halizah! 🎉 Mahasiswi yang sedang mengeksplorasi dunia Sistem Informasi. Ikuti perjalanan saya untuk belajar, berinovasi, dan berbagi wawasan. Ayo, temukan lebih banyak di profil saya 🌟</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+        <div class="icon flex-shrink-0">
+          <img src="assets/img/susi wulandari-1.jpg" alt="portfolio 6" class="rounded-circle" style="width: 70px; height: 55px; object-fit: cover;">
+        </div>
+        <div>
+          <h4 class="title"><a href="personalbrandingsusi.html" class="stretched-link">Susi Wulandari</a></h4>
+          <p class="description">Halo semuanya 🙌 Saya Susi Wulandari, Mahasiswi Semester 4, Prodi Sistem Informasi. Saya siap berbagi cerita dan pengalaman seru di sini. Yuk, saling kenal dan bertukar inspirasi! ✨ 
+            Swipe Up!!!</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+        <div class="icon flex-shrink-0">
+          <img src="assets/img/sefti-1.jpg" alt="portfolio 7" class="rounded-circle" style="width: 100px; height: 55px; object-fit: cover;">
+        </div>
+        <div>
+          <h4 class="title"><a href="personalbrandingsefti.html" class="stretched-link">Nur Seftianah</a></h4>
+          <p class="description">Halo, saya Sefti! 🌱 Mahasiswi yang senang mengeksplorasi inovasi dan teknologi. Temukan proyek-proyek saya yang penuh kreativitas dan inspirasi di sini! ✨ Swipe Up!</p>
+        </div>
+      </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+       <!-- Swiper Section -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+        </div>
+
+      </div>
+
+    </section><!-- /Swiper Section -->
+                
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Jika Anda ingin mengadakan pertemuan atau diskusi lebih lanjut, Anda dapat menghubungi kami melalui kontak yang tercantum di bawah ini. 
+          Atau, Anda juga dapat langsung mengunjungi kami di alamat yang tertera sekian dan terima kasih.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Jl. Perjuangan No.10B, Karyamulya, Kec. Kesambi, Kota Cirebon, Jawa Barat 45135</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <a href="https://wa.me/6287744197882" target="_blank">Cinta Coding</a></span></li>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>sisteminformasi.com</p>
+                  <p>cintacoding.com</p>
+                </div>
+              </div><!-- End Info Item -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.730408781911!2d108.5244816!3d-6.7364911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f1dfcef42566d%3A0x3e146375f0046403!2sSchool%20of%20Information%20Management%20and%20Computer%20IKMI!5e0!3m2!1sen!2sid!4v1677062676723!5m2!1sen!2sid" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Website Portofolio Team Cinta Coding</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="#services">teamcintacoding</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
